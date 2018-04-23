@@ -7,8 +7,8 @@ In this project, I am using NN to clone the driving behavior. For different cond
 [image1]: ./model.png "Model Visualization"
 [image2]: ./image_cut.png "Image after cut"
 [image3]: ./train_history.png "Training/Validating History"
-[image4]: ./original.png "Normal Image"
-[image5]: ./flipped.png "Flipped Image"
+[image4]: ./original.jpg "Normal Image"
+[image5]: ./flipped.jpg "Flipped Image"
 [image6]: ./dist.png "Image angle distribution"
 
 ### Files
@@ -59,7 +59,6 @@ Visualization of the architecture is:
 ![alt_text][image1]
 
 * I am using Keras Lambda layer to normalize the data and central the mean to 0, followed by Cropping2D layer, which cuts off the image such that only the zones of interest left. Here from top, 70px was cut and from bottom 24px was cut. An example after cut is as follows: 
-
 ![alt_text][image2]
 
 * Convolution2D layers were adopted in this model with relu activation. The same kernel size are used as the model in End to end learning for self-driving cars from NVIDIA. 
