@@ -54,10 +54,12 @@ I am using the architecture proposed by NVIDIA. The captured image is 160 x 320 
 | Dense					| from 10 to 1|
 | Loss					| mse|
  
-Visualization of the architecture is:
+Visualization of the architecture is: 
+
 ![alt_text][image1]
 
-* I am using Keras Lambda layer to normalize the data and central the mean to 0, followed by Cropping2D layer, which cuts off the image such that only the zones of interest left. Here from top, 70px was cut and from bottom 24px was cut. An example after cut is as follows:
+* I am using Keras Lambda layer to normalize the data and central the mean to 0, followed by Cropping2D layer, which cuts off the image such that only the zones of interest left. Here from top, 70px was cut and from bottom 24px was cut. An example after cut is as follows: 
+
 ![alt_text][image2]
 
 * Convolution2D layers were adopted in this model with relu activation. The same kernel size are used as the model in End to end learning for self-driving cars from NVIDIA. 
@@ -79,10 +81,12 @@ My model used an adam optimizer and mean square error as loss function. The epoc
 	- When the image view is read in, apply the adjust angle to current steering. The adjust angle is .25, so for image from left view, the new steering would be orignal steering plus .25 while for image from right view, the new steering would be orignal minus .25.
 	- And I will toss the coin again to decide if operation of flipping the image should be applied. 
 	- For each epoch, I am using twice as much data as I have. Since for each data, it could be either selected of different view or be flipped, the chance to have duplicate data is low.
-So an example of orignal image and flipped image is:
+So an example of orignal image and flipped image is: 
+
 ![alt_text][image4]
 ![alt_text][image5]
-So finally the distribution of the data looks like:
+So finally the distribution of the data looks like: 
+
 ![alt_text][image6]
 
 * All the data was shuffled and splitted. 20% of the data was used for validation while all the others were used for training.
