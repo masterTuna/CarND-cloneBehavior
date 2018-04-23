@@ -83,7 +83,8 @@ My model used an adam optimizer and mean square error as loss function. The epoc
 So an example of orignal image and flipped image is: 
 
 ![alt_text][image4]
-![alt_text][image5]
+![alt_text][image5]  
+
 So finally the distribution of the data looks like: 
 
 ![alt_text][image6]
