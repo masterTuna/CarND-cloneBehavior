@@ -4,12 +4,12 @@ In this project, I am using NN to clone the driving behavior. For different cond
 
 [//]: # (Image References)
 
-[image1]: ./images_doc/model.png "Model Visualization"
-[image2]: ./images_doc/image_cut.png "Image after cut"
-[image3]: ./images_doc/train_history.png "Training/Validating History"
-[image4]: ./images_doc/original.png "Normal Image"
-[image5]: ./images_doc/flipped.png "Flipped Image"
-[image6]: ./images_doc/dist.png "Image angle distribution"
+[image1]: ./model.png "Model Visualization"
+[image2]: ./image_cut.png "Image after cut"
+[image3]: ./train_history.png "Training/Validating History"
+[image4]: ./original.png "Normal Image"
+[image5]: ./flipped.png "Flipped Image"
+[image6]: ./dist.png "Image angle distribution"
 
 ### Files
 My project includes the following files:
